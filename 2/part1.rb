@@ -1,8 +1,8 @@
-puts(DATA.readlines.select do |line|
+puts(DATA.readlines.count do |line|
   match = /(?<min>\d+)-(?<max>\d+) (?<char>\w): (?<pwd>\w+)/.match(line)
   min, max = match.values_at(:min, :max).map(&:to_i)
   (min..max).include?(match[:pwd].chars.select{|c| c == match[:char]}.count)
-end.count)
+end)
 
 __END__
 9-10 m: mmmmnxmmmwm
