@@ -1,9 +1,3 @@
-require 'byebug'
-
-# between
-# 80763452
-# 87456329
-
 cups = '685974213'.split('').map(&:to_i)
 
 100.times do |i|
