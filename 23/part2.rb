@@ -65,6 +65,3 @@ one_node = pointers[1]
 a = one_node.next
 b = a.next
 puts a.val, b.val, (a.val)*(b.val)
-
-
-
